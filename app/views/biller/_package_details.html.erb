@@ -1,0 +1,19 @@
+<p class="seccion text-center">Package</p>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Type</th>
+      <th>Name</th>
+      <th class="text-right">Cost</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td colspan="4" class="text-right divider">Subscriptions</td></tr>
+    <%= table_lines(@package["subscriptions"])  %>
+  </tbody>
+  <tfoot>
+    <tr class="sub-total"><td class="ident"></td><td colspan="2" >Total</td><td class="text-right"><%=@package["total"]  %></td></tr>
+  </tfoot>
+</table>

@@ -1,0 +1,21 @@
+<div class="col-xs-6">
+  <h1><%= image_tag "logo.png"  %></h1>
+</div>
+
+<div class="col-xs-6 text-right">
+  <h1><%= @statement["generated"]  %></h1>
+  <h1><small>Invoice #001</small></h1>
+</div>
+
+<hr>
+
+<div class="invoice-body">
+  <%= render partial: "client_details"  %>
+
+  <%= render partial: "package_details" %>
+  <%= render partial: "call_charges_details" %>
+  <%= render partial: "sky_store_details" %>
+</div>
+
+<hr>
+<%= render partial: "payment_details"  %>

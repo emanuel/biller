@@ -1,0 +1,74 @@
+// Place all the styles related to the biller controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.panel-default > .panel-heading {
+    color: #333333;
+    background-color: #00AFEA;
+    border-color: #ddd;
+    color: white;
+}
+
+#statement, #address {
+  .panel-body {
+    min-height: 140px;
+  }
+}
+
+#bank-details, #contact-details {
+   .panel-body {
+    min-height: 180px;
+  }
+}
+
+table{
+  th {
+    background-color: #F3F3F3;
+    color: black;
+  }
+
+  td.divider {
+    background-color: #D268A1;;
+    color: #ffffff;
+    padding: 8px !important;
+  }
+
+  td.ident {
+    width: 40%;
+    border-top: transparent !important;
+  }
+
+  tr.sub-total {
+    font-weight: bold;
+    padding: 8px !important;
+  }
+}
+
+.table > thead > tr > th {
+    vertical-align: bottom;
+    border-bottom: 0px transparent;
+}
+
+.table > thead > tr > th, .table > thead > tr > td, .table > tbody > tr > th, .table > tbody > tr > td, .table > tfoot > tr > th, .table > tfoot > tr > td {
+    padding: 4px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+}
+
+p.seccion {
+    border: solid;
+    margin: 0px;
+    padding: 0px;
+    border-width: 1px;
+    height: 40px;
+    font-size: 1.5em;
+    border-color: #CCCCCC;
+    // background-color: #537386;
+    color:white;
+    background-color: #00AFEA;
+}
+
+.invoice-body{
+  margin-left: 10%;
+}

@@ -1,0 +1,24 @@
+<p class="seccion text-center">Sky Store</p>
+
+<table class="table"> <!-- table-bordered -->
+  <thead>
+    <tr>
+      <th></th>
+      <th>Title</th>
+      <th class="text-right">Cost</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td colspan="3" class="text-right divider">Rentals</td></tr>
+    <%= table_lines_sky_store(@sky_store["rentals"])  %>
+    <tr><td colspan="3" class="text-right divider">Buy and Keep</td></tr>
+    <%= table_lines_sky_store(@sky_store["buyAndKeep"])  %>
+  </tbody>
+  <tfoot>
+    <tr class="sub-total">
+      <td class="ident"></td>
+      <td >Total</td>
+      <td class="text-right"><%=@sky_store["total"]  %></td>
+    </tr>
+  </tfoot>
+</table>

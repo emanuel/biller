@@ -1,0 +1,22 @@
+<p class="seccion text-center">Call Charge</p>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Called</th>
+      <th>Duration</th>
+      <th class="text-right">Cost</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td colspan="4" class="text-right divider">Calls</td></tr>
+    <%= table_lines_calls(@call_charges["calls"])  %>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td class="ident"></td>
+      <td colspan="2" class="sub-total">Total</td>
+      <td class="text-right"><%=@call_charges["total"]  %></td></tr>
+  </tfoot>
+</table>
